@@ -1,3 +1,8 @@
+.container {
+  position: relative;
+  height: calc(100vh - 8rem);
+}
+
 .header {
   width: 100%;
 }
@@ -5,4 +10,48 @@
 .image {
   width: 100%;
   height: auto;
+}
+
+.contents {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: calc(100% - 200px);
+  height: calc(100% - 120px);
+  background-color: #1b1d1f;
+  padding: 100px;
+
+  h1 {
+    color: #fef7ee;
+    text-align: center;
+  }
+
+  p {
+    width: 450px;
+    color: #6f757c;
+    font-size: 14px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .tabs {
+    margin: 8px auto;
+    text-align: center;
+  }
+
+  input[type='radio'] {
+    display: none;
+  }
+  input[type='radio']:checked + label {
+    background-color: #6f757c;
+    border-radius: 8px;
+  }
+
+  label {
+    display: inline-block;
+    padding: 10px;
+    color: #fef7ee;
+    font-size: 14px;
+  }
 }

@@ -1,6 +1,6 @@
 .container {
   position: relative;
-  height: calc(100vh - 8rem);
+  height: 100vh;
 }
 
 .header {
@@ -17,17 +17,17 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: calc(100% - 200px);
-  height: calc(100% - 120px);
+  width: calc(100% - 150px);
+  height: calc(100vh - 4rem);
   background-color: #1b1d1f;
-  padding: 100px;
+  padding: 80px;
 
   h1 {
     color: #fef7ee;
     text-align: center;
   }
 
-  p {
+  .sub {
     width: 450px;
     color: #6f757c;
     font-size: 14px;
@@ -53,5 +53,17 @@
     padding: 10px;
     color: #fef7ee;
     font-size: 14px;
+  }
+}
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  li {
+    margin-top: 20px;
+    list-style-type: none;
+    flex-basis: 33%;
+  }
+  img {
+    border-radius: 10px;
   }
 }

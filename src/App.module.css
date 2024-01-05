@@ -21,6 +21,7 @@
   height: calc(100vh - 4rem);
   background-color: #1b1d1f;
   padding: 80px;
+  border-radius: 10px;
 
   h1 {
     color: #fef7ee;
@@ -59,9 +60,40 @@
   display: flex;
   flex-wrap: wrap;
   li {
-    margin-top: 20px;
+    margin: 20px 16px 20px 0;
     list-style-type: none;
-    flex-basis: 33%;
+    width: 260px;
+  }
+  p {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+  }
+  .title {
+    font-size: 14px;
+    color: #fef7ee;
+  }
+  .price {
+    font-size: 12px;
+    color: #111315;
+    font-weight: 500;
+    background-color: #bee3cc;
+    padding: 4px 8px;
+    border-radius: 4px;
+  }
+  .infoBar {
+    display: flex;
+    margin-top: 4px;
+    height: 24px;
+    color: #fef7ee;
+    font-size: 14px;
+    line-height: 24px;
+    img {
+      margin-right: 4px;
+    }
+    span {
+      color: #6f757c;
+    }
   }
   img {
     border-radius: 10px;

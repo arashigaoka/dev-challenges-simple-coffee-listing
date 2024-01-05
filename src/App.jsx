@@ -42,16 +42,18 @@ function App() {
             <li key={coffee.id}>
               <img src={coffee.image} alt={coffee.name} />
               <p>
-                <span>{coffee.name}</span>
-                <span>${coffee.price}</span>
+                <span className={styles.title}>{coffee.name}</span>
+                <span className={styles.price}>{coffee.price}</span>
               </p>
-              {coffee.popular ? (
-                <img src={starFill} />
-              ) : (
-                <img src={starEmpty} />
-              )}
-              {coffee.rating}
-              <span>({coffee.votes} votes)</span>
+              <div className={styles.infoBar}>
+                {coffee.rating ? (
+                  <img src={starFill} />
+                ) : (
+                  <img src={starEmpty} />
+                )}
+                {coffee.rating ? coffee.rating : 'No rating'}
+                <span>（{coffee.votes} votes）</span>
+              </div>
             </li>
           ))}
         </ul>
